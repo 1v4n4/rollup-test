@@ -2434,56 +2434,8 @@
 	  return /*#__PURE__*/React.createElement("div", null, "Hello World from A");
 	};
 
-	const Bcomponent = () => {
-	  return /*#__PURE__*/React.createElement("div", null, "Hello World from B");
-	};
-
-	var actionpage = 42;
-	var organisation = "Fix the Status Quo";
-	var org = {
-		name: "ftsq",
-		privacyPolicy: "https://fixthestatusquo.com/privacy_policy/",
-		url: "https://fixthestatusquo.org"
-	};
-	var lang = "en";
-	var filename = "demo/42";
-	var lead = {
-		name: "ftsq",
-		title: "Fix the Status Quo"
-	};
-	var campaign = {
-		title: "The Hitchhiker's Guide to the Galaxy",
-		name: "do-not-panic"
-	};
-	var journey = [
-		"A"
-	];
-	var layout = {
-		primaryColor: "#234678"
-	};
-	var portal = [
-	];
-	var config = {
-		actionpage: actionpage,
-		organisation: organisation,
-		org: org,
-		lang: lang,
-		filename: filename,
-		lead: lead,
-		campaign: campaign,
-		journey: journey,
-		layout: layout,
-		portal: portal
-	};
-
 	const App = () => {
-	  // console.log import from config.js
-
-	  console.log('import from config.js', config);
-	  if (config.journey[0] === 'A') return /*#__PURE__*/React.createElement(Acomponent, null);
-	  return /*#__PURE__*/React.createElement("div", {
-	    className: "App"
-	  }, /*#__PURE__*/React.createElement(Acomponent, null), /*#__PURE__*/React.createElement(Bcomponent, null));
+	  return /*#__PURE__*/React.createElement(Acomponent, null);
 	};
 
 	return App;

@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "roll": "rollup -c rollup.config.js -w"
+    "roll": "rollup -c rollup.config.js -w --bundleConfigAsCjs"
   },
   "eslintConfig": {
     "extends": [
