@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Bundle react with Rollup",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "roll": "npx rollup -c -w",
     "start": "react-scripts start",
