@@ -17,9 +17,15 @@
 
 `node bin/build.js` (returns build output)
 
+## Components
+
+A component (imports MUI Button and MUI Slider)
+B component (imports MUI Button)
+C component (imports MUI Button and MUI Slider)
+
 ## Folders
 
-Rollup uses 'dist' and 'public rollup
+Rollup uses 'dist' and 'public rollup'
 Webpack - 'build' and 'public'
 
 ## \*
