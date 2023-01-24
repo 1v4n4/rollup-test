@@ -20,9 +20,9 @@ const f = async () => {
     const { output } = await bundle.generate(optionsObj.output);
     bundleArray.push(output);
 
-    // await Promise.all(optionsObj.output.map(bundle.write));
+    await Promise.all(optionsObj.output.map(bundle.write));
 
-    console.log("bundleArray", bundleArray)
+    // console.log("bundleArray", bundleArray)
     return bundleArray;
   }
 
