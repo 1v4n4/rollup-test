@@ -11,11 +11,15 @@
 - Webpack server
   `npm start`
 
-### Bin script
+### Bin scripts
 
-- Rollup build + serve + watch
+- Rollup build + serve + watch, single input/output
 
 `node bin/build.js` (returns build output)
+
+- Rollup build + serve + watch, multiple inputs/outputs
+
+`node bin/build2.js` (returns build output)
 
 ## Components
 
@@ -25,7 +29,8 @@ C component (imports MUI Button and MUI Slider)
 
 ## Folders
 
-Rollup uses 'dist' and 'public rollup'
+Rollup single input/output uses 'dist' and 'public-rollup'
+Rollup multiple inputs/outputs uses 'dist2' and 'public-rollup2'
 Webpack - 'build' and 'public'
 
 ## \*
