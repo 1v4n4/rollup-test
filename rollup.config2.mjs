@@ -19,7 +19,7 @@ export default {
   },
   plugins: [
     image(),
-    multiInput(({ relative: 'dist2/' })),
+    multiInput.default({ relative: 'dist2/' }),
     nodeResolve({
       extensions: [".js"],
     }),

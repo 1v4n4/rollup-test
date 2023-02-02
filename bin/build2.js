@@ -1,4 +1,4 @@
-import loadConfigFile from 'rollup/dist/loadConfigFile';
+import { loadConfigFile }  from 'rollup/dist/loadConfigFile.js';
 import * as path from 'path';
 import * as rollup from 'rollup';
 import { fileURLToPath } from 'url';
@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 const f = async () => {
   const bundleArray = [];
 
-  const { options, warnings } = await loadConfigFile(path.resolve(__dirname, '../rollup.config2.js'), { format: 'es' });
+  const { options, warnings } = await loadConfigFile(path.resolve(__dirname, '../rollup.config2.mjs'), { format: 'es' });
 
   console.log(`We currently have ${warnings.count} warnings`);
   warnings.flush();
@@ -25,7 +25,6 @@ const f = async () => {
     // console.log("bundleArray", bundleArray)
     return bundleArray;
   }
-
 }
 
 f();
