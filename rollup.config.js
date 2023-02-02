@@ -6,19 +6,18 @@ import commonjs from '@rollup/plugin-commonjs';
 import replace from '@rollup/plugin-replace';
 import image from '@rollup/plugin-image';
 import json from "@rollup/plugin-json";
-
-// import postcss from 'rollup-plugin-postcss';
+import terser from '@rollup/plugin-terser';
 
 export default {
   input: "src/index.js",
   output: {
     file: "dist/bundle-rollup.js",
-    format: "iife",
+    format: "cjs",
     sourcemap: true,
   },
   plugins: [
     image(),
-
+    terser(),
     nodeResolve({
       extensions: [".js"],
     }),

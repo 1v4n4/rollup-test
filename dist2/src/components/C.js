@@ -1,15 +1,2 @@
-
-(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
-import { R as React, B as Button } from '../../Button-cc2a7a2e.js';
-import { S as Slider } from '../../Slider-77229989.js';
-
-const Ccomponent = () => {
-  console.log("Ccomponent");
-  return /*#__PURE__*/React.createElement("div", null, " ", /*#__PURE__*/React.createElement("p", null, " Hello World from C "), /*#__PURE__*/React.createElement(Button, {
-    variant: "contained",
-    color: "primary"
-  }, "Button C"), /*#__PURE__*/React.createElement(Slider, null));
-};
-
-export { Ccomponent as default };
+var e,l;(e=self.document)&&!e.getElementById("livereloadscript")&&((l=e.createElement("script")).async=1,l.src="//"+(self.location.host||"localhost").split(":")[0]+":35729/livereload.js?snipver=1",l.id="livereloadscript",e.getElementsByTagName("head")[0].appendChild(l));import{R as t,B as o}from"../../Button-cc2a7a2e.js";import{S as a}from"../../Slider-77229989.js";const r=()=>(console.log("Ccomponent"),t.createElement("div",null," ",t.createElement("p",null," Hello World from C "),t.createElement(o,{variant:"contained",color:"primary"},"Button C"),t.createElement(a,null)));export{r as default};
 //# sourceMappingURL=C.js.map
